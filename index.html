@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>زيد ماركت V5 🇩🇪 عروض أمازون واليورو اليوم</title>
+    <meta name="description" content="موقع مغتربين ألمانيا - عروض أمازون، مواقيت الصلاة، بث مكة والمدينة المباشر، سعر اليورو اليوم، تلفزيون عربي مباشر، تحويل الوثائق">
+    <link rel="canonical" href="https://muradtv75-oss.github.io/Zaid-Market.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/1/Iconify.min.js"></script>
+    <link rel="manifest" href="manifest-market.json">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Zaid Market V5">
+    <style>
+        :root { --primary: #1e3a8a; --accent: #3b82f6; --green: #059669; --amazon: #ff9900; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', 'Cairo', 'Segoe UI', Tahoma, sans-serif; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+        [dir="rtl"] body, [dir="rtl"] { font-family: 'Cairo', 'Inter', 'Segoe UI', Tahoma, sans-serif; text-align: right; }
+        body {
+            background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #6366f1, #8b5cf6, #a855f7, #d946ef, #ec4899, #6366f1, #3b82f6);
+            background-size: 800% 800%;
+            animation: gradientShift 25s ease infinite;
+            min-height: 100vh;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
+        }
+        .particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+        .particle { position: absolute; border-radius: 50%; opacity: 0.12; animation: floatUp linear infinite; }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0); opacity: 0; }
+            10% { opacity: 0.12; }
+            90% { opacity: 0.12; }
+            100% { transform: translateY(-100px) scale(1); opacity: 0; }
+        }
+        .glass-panel {
+            background: rgba(255,255,255,0.93); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.7);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08), 0 10px 10px -5px rgba(0,0,0,0.04), 0 0 30px rgba(99,102,241,0.08);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .glass-panel:hover {
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.12), 0 0 40px rgba(99,102,241,0.12);
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6); transition: all 300ms ease;
+            position: relative; overflow: hidden;
+        }
+        .btn-primary:hover { background: linear-gradient(135deg, #1e40af, #2563eb); transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(59,130,246,0.3); }
+        .btn-primary::after, .btn-amazon::after, .games-promo::after {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+        .btn-amazon { background: linear-gradient(135deg, #ff9900, #ffb333); transition: all 300ms ease; position: relative; overflow: hidden; }
+        .btn-amazon:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(255,153,0,0.4); }
+        .affiliate-notice { background: #fffbeb; border-left: 4px solid #f59e0b; }
+        [dir="rtl"] .affiliate-notice { border-left: none; border-right: 4px solid #f59e0b; }
+        .shop-card {
+            transition: all 300ms ease; border-radius: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03); position: relative; overflow: hidden;
+            text-decoration: none !important;
+        }
+        .shop-card::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .shop-card:hover::before { opacity: 1; }
+        .shop-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 0 25px rgba(99,102,241,0.2);
+        }
+        .telegram-float {
+            position: fixed; bottom: 20px; right: 20px; z-index: 50;
+            background: #0088cc; border-radius: 50px; height: 56px; padding: 0 20px;
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3); transition: transform 300ms;
+            color: white; font-weight: bold; text-decoration: none;
+        }
+        .telegram-float:hover { transform: scale(1.05); }
+        .qr-box { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+        .euro-box {
+            background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
+            border: 2px solid #22d3ee; cursor: pointer; transition: all 300ms;
+        }
+        .euro-box:hover { transform: scale(1.02); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        @keyframes softPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.015); }
+        }
+        .euro-box { animation: softPulse 3s ease-in-out infinite; }
+        .fire-tv-box { background: linear-gradient(135deg, #111827 0%, #1f2937 100%); }
+        .live-dot {
+            display: inline-block; width: 8px; height: 8px; background-color: #10b981;
+            border-radius: 50%; animation: pulse-dot 1.5s infinite; margin-left: 5px;
+        }
+        @keyframes pulse-dot {
+            0% { box-shadow: 0 0 0 0 rgba(16,185,129,0.7); }
+            70% { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+            100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+        }
+        /* TV Section */
+        .tv-section { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%); border-radius: 16px; overflow: hidden; border: 2px solid #333; }
+        .tv-header { background: linear-gradient(135deg, #e53e3e, #c53030); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; }
+        .tv-header h3 { color: white; font-weight: bold; font-size: 0.95rem; display: flex; align-items: center; gap: 8px; }
+        .tv-body { background: #000; position: relative; aspect-ratio: 16/9; }
+        .tv-body iframe { width: 100%; height: 100%; border: none; }
+        .tv-body .tv-loading {
+            position: absolute; inset: 0; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; background: #000; color: #888; z-index: 2;
+        }
+        .tv-body .tv-loading .spinner {
+            width: 40px; height: 40px; border: 4px solid #333; border-top-color: #e53e3e;
+            border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 10px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .tv-footer { background: #1a1a2e; padding: 10px; }
+        .tv-channels {
+            display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px;
+            scrollbar-width: thin; scrollbar-color: #555 #1a1a2e;
+        }
+        .tv-channels::-webkit-scrollbar { height: 4px; }
+        .tv-channels::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+        .tv-ch-btn {
+            flex-shrink: 0; padding: 6px 12px; border-radius: 10px;
+            border: 2px solid #333; background: #222; color: #ccc; cursor: pointer;
+            font-size: 0.75rem; font-weight: bold; transition: all 0.3s;
+            display: flex; align-items: center; gap: 5px; white-space: nowrap;
+        }
+        .tv-ch-btn:hover { border-color: #e53e3e; color: white; }
+        .tv-ch-btn.active { background: linear-gradient(135deg, #e53e3e, #c53030); border-color: #e53e3e; color: white; }
+        .tv-controls { display: flex; gap: 8px; margin-top: 8px; }
+        .tv-ctrl-btn {
+            flex: 1; padding: 8px; border-radius: 10px; border: none;
+            font-weight: bold; font-size: 0.8rem; cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 5px;
+        }
+        .tv-ctrl-btn.reload { background: #333; color: #fff; } .tv-ctrl-btn.reload:hover { background: #555; }
+        .tv-ctrl-btn.volume { background: #2563eb; color: white; } .tv-ctrl-btn.volume:hover { background: #1d4ed8; }
+        .tv-ctrl-btn.youtube { background: #dc2626; color: white; } .tv-ctrl-btn.youtube:hover { background: #b91c1c; }
+        .tv-ctrl-btn.fullscreen-btn { background: #059669; color: white; } .tv-ctrl-btn.fullscreen-btn:hover { background: #047857; }
+        .tv-fullscreen { position: fixed !important; inset: 0 !important; z-index: 9999 !important; border-radius: 0 !important; border: none !important; }
+        .tv-fullscreen .tv-body { aspect-ratio: auto !important; height: calc(100vh - 110px) !important; }
+        .tv-fullscreen .tv-header { border-radius: 0; }
+        .tv-fullscreen .tv-footer { position: fixed; bottom: 0; left: 0; right: 0; }
+        /* Games Promo */
+        .games-promo {
+            background: linear-gradient(135deg, #6C63FF 0%, #9C27B0 50%, #FF6584 100%);
+            border-radius: 16px; padding: 16px 20px; margin-bottom: 20px;
+            display: flex; align-items: center; gap: 15px; cursor: pointer;
+            transition: transform 0.3s; text-decoration: none; color: white;
+            box-shadow: 0 4px 15px rgba(108,99,255,0.4); position: relative; overflow: hidden;
+        }
+        .games-promo:hover { transform: scale(1.02); }
+        .games-promo .gp-icon { font-size: 2.5rem; z-index: 1; }
+        .games-promo .gp-text { z-index: 1; flex: 1; }
+        .games-promo .gp-text h3 { font-size: 1.05rem; font-weight: bold; }
+        .games-promo .gp-text p { font-size: 0.8rem; opacity: 0.9; }
+        .games-promo .gp-arrow { z-index: 1; font-size: 1.5rem; animation: bounceArrow 1.5s infinite; }
+        @keyframes bounceArrow { 0%,100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+        [dir="rtl"] .games-promo .gp-arrow { animation: bounceArrowRtl 1.5s infinite; }
+        @keyframes bounceArrowRtl { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-6px); } }
+        /* Converter Box */
+        .converter-box {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #9333EA 100%);
+            border-radius: 20px; padding: 24px; color: white; position: relative;
+            overflow: hidden; box-shadow: 0 8px 25px rgba(79,70,229,0.4);
+        }
+        .converter-box::before {
+            content: ''; position: absolute; top: -50%; right: -50%; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        }
+        .converter-btn {
+            display: flex; align-items: center; gap: 10px; padding: 10px 16px;
+            background: rgba(255,255,255,0.15); backdrop-filter: blur(4px);
+            border: 2px solid rgba(255,255,255,0.3); border-radius: 12px;
+            color: white; font-weight: bold; font-size: 0.85rem; cursor: pointer;
+            transition: all 0.3s; text-decoration: none; position: relative; z-index: 1;
+        }
+        .converter-btn:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        /* Earn Box */
+        .earn-box {
+            background: linear-gradient(135deg, #059669 0%, #10B981 50%, #34D399 100%);
+            border-radius: 16px; padding: 20px; color: white;
+            box-shadow: 0 4px 15px rgba(16,185,129,0.4);
+        }
+        .earn-btn {
+            display: flex; align-items: center; gap: 8px; padding: 8px 14px;
+            background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.4);
+            border-radius: 10px; color: white; font-weight: bold; font-size: 0.8rem;
+            cursor: pointer; transition: all 0.3s; text-decoration: none;
+        }
+        .earn-btn:hover { background: rgba(255,255,255,0.35); transform: translateY(-2px); }
+        /* Prayer Section */
+        .prayer-section {
+            background: linear-gradient(135deg, #059669 0%, #10B981 40%, #34D399 100%);
+            border-radius: 20px; padding: 24px; color: white;
+            box-shadow: 0 8px 30px rgba(16,185,129,0.4); position: relative; overflow: hidden;
+        }
+        .prayer-section::before {
+            content: ''; position: absolute; top: -30%; right: -20%; width: 60%; height: 60%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+        }
+        .prayer-card {
+            background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.25); border-radius: 12px;
+            padding: 10px 14px; text-align: center; transition: all 0.3s;
+        }
+        .prayer-card:hover { background: rgba(255,255,255,0.25); transform: translateY(-3px); }
+        .prayer-card.next-prayer { background: rgba(255,255,255,0.3); border: 2px solid #FFD700; box-shadow: 0 0 15px rgba(255,215,0,0.3); }
+        /* Chatbot */
+        .chat-float {
+            position: fixed; bottom: 90px; left: 20px; z-index: 200;
+            width: 64px; height: 64px; border-radius: 50%;
+            background: linear-gradient(135deg, #10B981, #059669); color: white;
+            border: none; cursor: pointer; font-size: 1.8rem;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 15px rgba(16,185,129,0.5); transition: transform 0.3s;
+        }
+        .chat-float:hover { transform: scale(1.1); }
+        .chat-panel {
+            position: fixed; bottom: 155px; left: 20px; z-index: 200;
+            width: 320px; max-height: 460px; background: white;
+            border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            display: none; flex-direction: column; overflow: hidden;
+            border: 2px solid #10B981;
+        }
+        .chat-panel.open { display: flex; animation: chatSlide 0.3s ease; }
+        @keyframes chatSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .chat-head {
+            background: linear-gradient(135deg, #10B981, #059669);
+            padding: 12px 16px; color: white; font-weight: bold;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .chat-msgs { flex: 1; overflow-y: auto; padding: 12px; max-height: 280px; display: flex; flex-direction: column; gap: 8px; }
+        .chat-msg { padding: 8px 12px; border-radius: 12px; font-size: 0.82rem; max-width: 85%; line-height: 1.4; }
+        .chat-msg.bot { background: #F0FDF4; color: #065F46; align-self: flex-start; border: 1px solid #BBF7D0; }
+        .chat-msg.user { background: #10B981; color: white; align-self: flex-end; }
+        .chat-quick { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-top: 1px solid #E5E7EB; }
+        .chat-qbtn {
+            padding: 5px 10px; border-radius: 15px; background: #ECFDF5;
+            border: 1px solid #10B981; color: #059669; font-size: 0.72rem;
+            font-weight: bold; cursor: pointer; transition: all 0.2s;
+        }
+        .chat-qbtn:hover { background: #10B981; color: white; }
+        .chat-input { display: flex; border-top: 1px solid #E5E7EB; }
+        .chat-input input { flex: 1; border: none; padding: 10px 12px; font-size: 0.85rem; outline: none; }
+        .chat-input button { background: #10B981; color: white; border: none; padding: 10px 16px; cursor: pointer; font-weight: bold; }
+        /* Modal */
+        .modal-overlay {
+            position: fixed; inset: 0; z-index: 300; background: rgba(0,0,0,0.6);
+            display: none; align-items: center; justify-content: center;
+        }
+        .modal-overlay.open { display: flex; }
+        .modal-box {
+            background: white; border-radius: 16px; padding: 30px;
+            max-width: 550px; width: 90%; max-height: 80vh; overflow-y: auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3); position: relative;
+        }
+        .modal-box h2 { font-size: 1.3rem; font-weight: 900; color: #1F2937; margin-bottom: 16px; }
+        .modal-box h3 { font-size: 1rem; font-weight: 700; color: #374151; margin-top: 14px; margin-bottom: 6px; }
+        .modal-box p { font-size: 0.85rem; color: #4B5563; line-height: 1.6; }
+        .modal-close {
+            position: absolute; top: 12px; right: 12px; background: #EF4444; color: white;
+            border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer;
+            font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: center;
+        }
+        [dir="rtl"] .modal-close { right: auto; left: 12px; }
+        /* Neon Effects */
+        h2 { text-shadow: 0 0 20px rgba(99,102,241,0.25); }
+        .btn-amazon { box-shadow: 0 4px 12px rgba(255,153,0,0.3); }
+        .btn-primary { box-shadow: 0 4px 12px rgba(59,130,246,0.3); }
+        @keyframes bannerGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.1); }
+            50% { box-shadow: 0 0 40px rgba(99,102,241,0.6), 0 0 100px rgba(139,92,246,0.3); }
+        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.3); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.5); }
+        /* Mobile Fixes */
+        @media (max-width: 640px) {
+            .chat-panel { left: 10px; width: calc(100vw - 20px); bottom: 150px; }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+<!-- Floating Particles -->
+<div class="particles" id="particles"></div>
+
+<!-- Zaid Platform Banner -->
+<div style="background:linear-gradient(90deg,#1e3a8a,#3b82f6,#6366f1,#8B5CF6);padding:8px 0;text-align:center;position:relative;z-index:50;animation:bannerGlow 3s ease-in-out infinite;overflow:hidden;">
+    <div style="position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,0.08) 50%,transparent 70%);animation:shimmer 4s infinite;"></div>
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;position:relative;z-index:1;">
+        <span style="color:white;font-weight:900;font-size:1.2rem;letter-spacing:1px;text-shadow:0 0 10px rgba(255,255,255,0.5);">🛡️ Zaid Platform</span>
+        <span style="color:rgba(255,255,255,0.4);">|</span>
+        <a href="https://muradtv75-oss.github.io/Zaid-Games.com/" target="_blank" rel="noopener" style="color:#FFD93D;font-weight:700;font-size:0.9rem;text-decoration:none;text-shadow:0 0 8px rgba(255,217,61,0.5);transition:all 0.3s;" onmouseover="this.style.textShadow='0 0 15px rgba(255,217,61,0.8)'" onmouseout="this.style.textShadow='0 0 8px rgba(255,217,61,0.5)'">🎮 Zaid Games</a>
+        <span style="color:rgba(255,255,255,0.4);">|</span>
+        <a href="https://muradtv75-oss.github.io/Zaid-Studio/" target="_blank" rel="noopener" style="color:#a5f3fc;font-weight:700;font-size:0.9rem;text-decoration:none;text-shadow:0 0 8px rgba(165,243,252,0.5);transition:all 0.3s;" onmouseover="this.style.textShadow='0 0 15px rgba(165,243,252,0.8)'" onmouseout="this.style.textShadow='0 0 8px rgba(165,243,252,0.5)'">🎬 Zaid Studio</a>
+    </div>
+</div>
+
+<!-- Sticky Navbar -->
+<nav class="sticky top-0 z-40 glass-panel border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl" style="filter:drop-shadow(0 0 6px rgba(59,130,246,0.5));">🛡️</span>
+            <span class="font-bold text-xl text-gray-900" style="text-shadow:0 0 20px rgba(59,130,246,0.15);">Zaid<span class="text-blue-600" style="text-shadow:0 0 12px rgba(59,130,246,0.4);">.Market</span> <span class="text-xs text-purple-600 font-bold">V5</span></span>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="setLanguage('de')" class="flex items-center gap-1.5 px-3 py-1.5 text-sm font-bold text-gray-800 hover:bg-gray-100 rounded-md border-2 border-black transition-colors bg-gray-50"><img src="https://flagcdn.com/w40/de.png" alt="DE" class="w-5 h-5 rounded-full shadow-sm"> DE</button>
+            <button onclick="setLanguage('en')" class="flex items-center gap-1.5 px-3 py-1.5 text-sm font-bold text-blue-800 hover:bg-blue-50 rounded-md border-2 border-blue-800 transition-colors bg-blue-50"><img src="https://flagcdn.com/w40/gb.png" alt="EN" class="w-5 h-5 rounded-full shadow-sm"> EN</button>
+            <button onclick="setLanguage('ar')" class="flex items-center gap-1.5 px-3 py-1.5 text-sm font-bold text-green-800 hover:bg-green-50 rounded-md border-2 border-green-800 transition-colors bg-green-50"><img src="https://flagcdn.com/w40/sa.png" alt="AR" class="w-5 h-5 rounded-full shadow-sm"> عربي</button>
+        </div>
+    </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
+<main class="flex-1 space-y-8">
+
+<!-- Games Promo Banner -->
+<a href="https://muradtv75-oss.github.io/Zaid-Games.com/" target="_blank" rel="noopener" class="games-promo" id="gamesPromo">
+    <span class="gp-icon">🎮</span>
+    <div class="gp-text">
+        <h3 id="gp-title">ألعاب تعليمية ممتعة لأطفالك! 🚀</h3>
+        <p id="gp-desc">15+ لعبة عالمية شهيرة - Fruit Ninja, Doodle Jump, Snake, 2048 وأكثر - مجاناً!</p>
+    </div>
+    <span class="gp-arrow">→</span>
+</a>
+
+<!-- QR / Euro / Amazon Search -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- QR Code -->
+    <div class="glass-panel rounded-xl p-4 text-center border-2 border-yellow-500 relative overflow-hidden">
+        <h3 class="text-lg font-bold text-yellow-800 mb-2 flex items-center justify-center gap-2" id="qr-title">Auf dem Handy öffnen</h3>
+        <div class="qr-box p-2 rounded-xl inline-block shadow-md border-2 border-yellow-600">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://muradtv75-oss.github.io/Zaid-Market.com/" alt="QR Code" class="w-28 h-28 rounded-lg pointer-events-none">
+        </div>
+    </div>
+    <!-- Euro Exchange -->
+    <a href="https://www.google.com/finance/quote/EUR-SAR" target="_blank" rel="noopener" class="block euro-box rounded-xl p-4 text-center">
+        <h3 class="text-lg font-bold text-cyan-800 mb-2 flex items-center justify-center gap-2" id="euro-title">Euro-Kurs Heute <span class="live-dot"></span></h3>
+        <div class="space-y-1 text-sm font-semibold text-gray-800" id="euro-rates">
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇩🇿 DZD</span> <span id="rate-dzd">...</span></div>
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇸🇦 SAR</span> <span id="rate-sar">...</span></div>
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇦🇪 AED</span> <span id="rate-aed">...</span></div>
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇪🇬 EGP</span> <span id="rate-egp">...</span></div>
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇹🇳 TND</span> <span id="rate-tnd">...</span></div>
+            <div class="flex justify-between bg-white/60 p-1.5 rounded"><span>🇲🇦 MAD</span> <span id="rate-mad">...</span></div>
+        </div>
+        <p class="text-[10px] text-cyan-700 mt-2" id="euro-click-text">Klicken für live Kurse</p>
+        <p class="text-[10px] text-cyan-700 mt-1" id="rateTimestamp">--:--:--</p>
+    </a>
+    <!-- Amazon Search -->
+    <div class="glass-panel rounded-xl p-4 border-2 border-orange-500 bg-orange-50">
+        <h3 class="text-lg font-bold text-orange-800 mb-2 flex items-center justify-center gap-2" id="search-title">Amazon Schnellsuche</h3>
+        <div class="flex gap-1 mb-2">
+            <input type="text" id="amazon-search-input" placeholder="Suche auf Amazon..." class="flex-1 outline-none border border-gray-300 p-2 rounded-l-md text-sm" onkeydown="if(event.key==='Enter')searchAmazon()">
+            <button onclick="searchAmazon()" class="btn-amazon text-white font-bold px-4 py-2 rounded-r-md text-sm">🔍</button>
+        </div>
+        <div class="flex flex-col gap-1.5">
+            <a id="coupon-link" href="#" target="_blank" rel="noopener" class="btn-amazon text-center text-white font-bold px-3 py-1.5 rounded-md text-xs flex items-center justify-center gap-1"><span class="iconify" data-icon="mdi:ticket-percent"></span> <span id="coupon-btn">Amazon Gutscheine</span></a>
+            <a id="prime-link" href="#" target="_blank" rel="noopener" class="bg-blue-600 hover:bg-blue-700 text-center text-white font-bold px-3 py-1.5 rounded-md text-xs flex items-center justify-center gap-1 transition-colors"><span class="iconify" data-icon="mdi:prime"></span> <span id="prime-btn">Prime Gratis Testen</span></a>
+        </div>
+    </div>
+</div>
+
+<!-- Fire TV Stick Promo -->
+<a id="firetv-link" href="#" target="_blank" rel="noopener" class="block fire-tv-box rounded-xl p-5 text-white shadow-lg transform hover:scale-[1.01] transition-all border border-gray-700">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+            <span class="iconify text-5xl text-orange-400" data-icon="mdi:television-play"></span>
+            <div><h3 class="text-xl font-bold mb-1" id="fire-title">Arabische Sender auf dem TV?</h3><p class="text-gray-400 text-sm" id="fire-text">Hol dir den Fire TV Stick von Amazon. Einfach einstecken und Apps wie Shahid & Co. legal nutzen!</p></div>
+        </div>
+        <div class="bg-orange-500 hover:bg-orange-600 text-white font-extrabold px-6 py-2.5 rounded-full shadow-md text-sm transition-colors whitespace-nowrap" id="fire-btn">Auf Amazon ansehen →</div>
+    </div>
+</a>
+
+<!-- Affiliate Notice -->
+<div class="affiliate-notice p-4 rounded-lg text-sm text-yellow-800" id="affiliate-notice"><strong>Transparenz-Hinweis:</strong> Einige Links sind Affiliate-Links. Wenn Sie über diese Links einkaufen, erhalten wir eine Provision ohne zusätzliche Kosten für Sie.</div>
+
+<!-- Document Converter -->
+<div class="converter-box" id="converterBox">
+    <div class="relative z-10">
+        <h3 class="text-xl font-bold mb-2" id="conv-title">📄 تحويل الوثائق | Document Converter</h3>
+        <p class="text-sm mb-4 opacity-90" id="conv-desc">حوّل ملفات PDF إلى Word أو Excel أو صور بسهولة وسرعة!</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+            <a href="https://www.ilovepdf.com/pdf_to_word" target="_blank" rel="noopener" class="converter-btn">📄 <span id="conv-pdf-word">PDF → Word</span></a>
+            <a href="https://www.ilovepdf.com/pdf_to_excel" target="_blank" rel="noopener" class="converter-btn">📊 <span id="conv-pdf-excel">PDF → Excel</span></a>
+            <a href="https://www.ilovepdf.com/pdf_to_jpg" target="_blank" rel="noopener" class="converter-btn">🖼️ <span id="conv-pdf-img">PDF → صور</span></a>
+        </div>
+        <a href="https://www.ilovepdf.com/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-indigo-700 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm shadow-md">
+            <span class="iconify text-xl" data-icon="mdi:cloud-upload"></span> <span id="conv-upload">رفع ملف PDF | Upload PDF</span>
+        </a>
+    </div>
+</div>
+
+<!-- YouTube TV Section -->
+<section class="tv-section" id="tvSection">
+    <div class="tv-header">
+        <h3>📺 <span id="tv-title">يوتيوب تي في | YouTube TV</span></h3>
+        <span style="color:#ff6b6b;font-size:0.75rem;font-weight:bold;">● LIVE</span>
+    </div>
+    <div class="tv-body" id="tvBody">
+        <div class="tv-loading" id="tvLoading">
+            <div class="spinner"></div>
+            <span style="font-size:0.8rem;" id="tv-loading-text">جاري التحميل...</span>
+        </div>
+        <iframe id="tvIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="tv-footer">
+        <div class="tv-channels" id="tvChannels">
+            <button class="tv-ch-btn active" data-vid="pLbNjFIKFpo" onclick="switchChannel(this)">🕋 مكة المكرمة</button>
+            <button class="tv-ch-btn" data-vid="xYjJ8Oile4g" onclick="switchChannel(this)">🕌 المدينة المنورة</button>
+            <button class="tv-ch-btn" data-vid="UCdID9fMXq0J0J-cA8KESRQ" data-type="channel" onclick="switchChannel(this)">📰 الجزيرة عربي</button>
+            <button class="tv-ch-btn" data-vid="UCNye-wNB1NxQkwc9MEjndYg" data-type="channel" onclick="switchChannel(this)">🌐 الجزيرة إنجليزي</button>
+            <button class="tv-ch-btn" data-vid="UCOyM4mJ5UrJga4s_ZcXiSzg" data-type="channel" onclick="switchChannel(this)">⚽ Eurosport</button>
+            <button class="tv-ch-btn" data-vid="UC3KeysBfImPbkVvKmKMJXJQ" data-type="channel" onclick="switchChannel(this)">🏆 BeIN Sport</button>
+        </div>
+        <div class="tv-controls">
+            <button class="tv-ctrl-btn reload" onclick="reloadChannel()" title="Reload"><span class="iconify" data-icon="mdi:refresh"></span> ↻</button>
+            <button class="tv-ctrl-btn volume" id="volumeBtn" onclick="toggleVolume()" title="Volume"><span class="iconify" data-icon="mdi:volume-high"></span> 🔊</button>
+            <button class="tv-ctrl-btn youtube" onclick="openYoutube()" title="Open in YouTube"><span class="iconify" data-icon="mdi:youtube"></span> YT</button>
+            <button class="tv-ctrl-btn fullscreen-btn" onclick="toggleFullscreen()" title="Fullscreen"><span class="iconify" data-icon="mdi:fullscreen"></span> ⛶</button>
+        </div>
+    </div>
+</section>
+
+<!-- Shopping DE -->
+<section id="shopping-de">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><span class="iconify text-blue-600" data-icon="mdi:shopping"></span> <span id="shop-de-title">Top Shops in Deutschland</span></h2>
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-3">
+        <a id="shop-de-amz" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-orange-50 border-2 border-orange-300 hover:border-orange-500"><span class="iconify text-3xl text-orange-600 mb-1" data-icon="mdi:amazon"></span><span class="font-bold text-gray-800 text-sm">Amazon DE</span><span class="text-[10px] text-gray-500" id="shop-amz">Alles für den Alltag</span></a>
+        <a id="shop-de-tech" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-red-50 border-2 border-red-300 hover:border-red-500"><span class="iconify text-3xl text-red-600 mb-1" data-icon="mdi:television-classic"></span><span class="font-bold text-gray-800 text-sm">Amazon Technik</span><span class="text-[10px] text-gray-500" id="shop-media">Elektronik & Technik</span></a>
+        <a id="shop-de-fashion" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-pink-50 border-2 border-pink-300 hover:border-pink-500"><span class="iconify text-3xl text-pink-600 mb-1" data-icon="mdi:hanger"></span><span class="font-bold text-gray-800 text-sm">Amazon Fashion</span><span class="text-[10px] text-gray-500" id="shop-shein">Mode & Kleidung</span></a>
+        <a id="shop-de-deals" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-blue-50 border-2 border-blue-300 hover:border-blue-500"><span class="iconify text-3xl text-blue-600 mb-1" data-icon="mdi:tag-multiple"></span><span class="font-bold text-gray-800 text-sm">Amazon Deals</span><span class="text-[10px] text-gray-500" id="shop-ebay">Tagesangebote</span></a>
+        <a href="https://s.click.aliexpress.com/e/_de3439098811zquae" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-amber-50 border-2 border-amber-300 hover:border-amber-500"><span class="iconify text-3xl text-amber-600 mb-1" data-icon="mdi:truck-delivery-outline"></span><span class="font-bold text-gray-800 text-sm">AliExpress</span><span class="text-[10px] text-gray-500" id="shop-ali">Direkt aus China</span></a>
+        <a id="shop-de-wohnen" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-green-50 border-2 border-green-300 hover:border-green-500"><span class="iconify text-3xl text-green-600 mb-1" data-icon="mdi:sofa-outline"></span><span class="font-bold text-gray-800 text-sm">Amazon Wohnen</span><span class="text-[10px] text-gray-500" id="shop-otto">Wohnen & Lifestyle</span></a>
+        <a id="shop-de-food" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-yellow-50 border-2 border-yellow-300 hover:border-yellow-500"><span class="iconify text-3xl text-yellow-600 mb-1" data-icon="mdi:food-apple-outline"></span><span class="font-bold text-gray-800 text-sm">Amazon Lebensmittel</span><span class="text-[10px] text-gray-500" id="shop-lidl">Lebensmittel</span></a>
+    </div>
+</section>
+
+<!-- Shopping Arab -->
+<section id="shopping-arab">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><span class="iconify text-green-600" data-icon="mdi:earth"></span> <span id="shop-arab-head">Shops im Nahen Osten</span></h2>
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-3">
+        <a id="shop-ar-sa" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-green-50 border-2 border-green-300 hover:border-green-500"><img src="https://flagcdn.com/w80/sa.png" alt="SA" class="w-10 h-10 rounded-full shadow-sm mb-1"><span class="font-bold text-gray-800 text-sm">Amazon SA</span><span class="text-[10px] text-gray-500" id="shop-sa">Saudi Arabien</span></a>
+        <a id="shop-ar-ae" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-red-50 border-2 border-red-300 hover:border-red-500"><img src="https://flagcdn.com/w80/ae.png" alt="AE" class="w-10 h-10 rounded-full shadow-sm mb-1"><span class="font-bold text-gray-800 text-sm">Amazon AE</span><span class="text-[10px] text-gray-500" id="shop-uae">Emirate & Qatar</span></a>
+        <a href="https://www.noon.com/uae-en/" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-yellow-50 border-2 border-yellow-300 hover:border-yellow-500"><span class="text-2xl mb-1">☀️</span><span class="font-bold text-gray-800 text-sm">Noon</span><span class="text-[10px] text-gray-500" id="shop-noon">Golf Angebote</span></a>
+        <a id="shop-ar-eg" href="#" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-slate-50 border-2 border-slate-300 hover:border-slate-500"><img src="https://flagcdn.com/w80/eg.png" alt="EG" class="w-10 h-10 rounded-full shadow-sm mb-1"><span class="font-bold text-gray-800 text-sm">Amazon EG</span><span class="text-[10px] text-gray-500" id="shop-eg">Ägypten & Algerien</span></a>
+        <a href="https://www.jumia.dz/" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-blue-50 border-2 border-blue-300 hover:border-blue-500"><img src="https://flagcdn.com/w80/dz.png" alt="DZ" class="w-10 h-10 rounded-full shadow-sm mb-1"><span class="font-bold text-gray-800 text-sm">Jumia</span><span class="text-[10px] text-gray-500" id="shop-dz">Algerien & Marokko</span></a>
+        <a href="https://www.namshi.com/" target="_blank" rel="noopener" class="shop-card p-4 flex flex-col items-center justify-center bg-pink-50 border-2 border-pink-300 hover:border-pink-500"><span class="text-2xl mb-1">👗</span><span class="font-bold text-gray-800 text-sm">Namshi</span><span class="text-[10px] text-gray-500" id="shop-namshi">Mode & Schuhe</span></a>
+    </div>
+</section>
+
+<!-- Earn & Save -->
+<div class="earn-box">
+    <h3 class="text-lg font-bold mb-2" id="earn-title">💰 اربح ووفّر | Earn & Save</h3>
+    <p class="text-sm mb-3 opacity-90" id="earn-desc">عروض حصرية توفّر عليك وتزيد مدخولك! عمولات ومكافآت لكل تسجيل</p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <a href="https://www.check24.de/" target="_blank" rel="noopener" class="earn-btn">🏦 <span id="earn-insurance">مقارنة تأمين</span></a>
+        <a href="https://n26.com/" target="_blank" rel="noopener" class="earn-btn">💳 <span id="earn-bank">حساب بنكي N26</span></a>
+        <a href="https://www.shoop.de/" target="_blank" rel="noopener" class="earn-btn">💸 <span id="earn-cashback">كاشباك Shoop</span></a>
+        <a id="earn-alexa-link" href="#" target="_blank" rel="noopener" class="earn-btn">🔊 <span id="earn-alexa">Amazon Alexa</span></a>
+    </div>
+</div>
+
+<!-- ===== PRAYER TIMES SECTION ===== -->
+<section class="prayer-section" id="prayerSection">
+    <div class="relative z-10">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4 gap-3">
+            <div>
+                <h3 class="text-2xl font-bold flex items-center gap-2">🕌 <span id="prayer-main-title">مواقيت الصلاة</span></h3>
+                <p class="text-sm opacity-90 mt-1" id="prayer-subtitle">ألمانيا - Germany</p>
+            </div>
+            <div class="text-right">
+                <div class="text-2xl font-bold" id="currentTime">--:--:--</div>
+                <div class="text-sm opacity-80" id="hijriDate">--</div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-4" id="prayerGrid">
+            <div class="prayer-card" id="pc-fajr"><div class="text-xs opacity-80">الفجر</div><div class="text-lg font-bold" id="pt-fajr">--:--</div></div>
+            <div class="prayer-card" id="pc-sunrise"><div class="text-xs opacity-80">الشروق</div><div class="text-lg font-bold" id="pt-sunrise">--:--</div></div>
+            <div class="prayer-card" id="pc-dhuhr"><div class="text-xs opacity-80">الظهر</div><div class="text-lg font-bold" id="pt-dhuhr">--:--</div></div>
+            <div class="prayer-card" id="pc-asr"><div class="text-xs opacity-80">العصر</div><div class="text-lg font-bold" id="pt-asr">--:--</div></div>
+            <div class="prayer-card" id="pc-maghrib"><div class="text-xs opacity-80">المغرب</div><div class="text-lg font-bold" id="pt-maghrib">--:--</div></div>
+            <div class="prayer-card" id="pc-isha"><div class="text-xs opacity-80">العشاء</div><div class="text-lg font-bold" id="pt-isha">--:--</div></div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-2 text-center">
+                <div class="text-xs opacity-80" id="next-prayer-label">الصلاة القادمة</div>
+                <div class="text-xl font-bold" id="nextPrayer">--</div>
+                <div class="text-sm font-bold" id="nextPrayerCountdown">--:--</div>
+            </div>
+            <button onclick="detectLocation()" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 rounded-xl px-4 py-2 font-bold text-sm transition-all flex items-center gap-2">
+                📍 <span id="detect-loc-btn">تحديد موقعي</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Support / Donate -->
+<section class="glass-panel rounded-xl p-6 text-center border-2 border-green-400 bg-green-50 shadow-lg">
+    <span class="text-4xl mb-3 inline-block">💝</span>
+    <h3 class="text-xl font-bold text-gray-900 mb-2" id="support-title">Unterstütze unser Projekt</h3>
+    <p class="text-sm text-gray-600 mb-4 max-w-lg mx-auto" id="support-text">Jede Unterstützung hilft uns, dieses Projekt weiterzuentwickeln. Vielen Dank!</p>
+    <div class="flex flex-wrap justify-center gap-3">
+        <a href="https://www.paypal.com/donate" target="_blank" rel="noopener" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2.5 rounded-full shadow-lg transition-all transform hover:scale-105"><span class="flex items-center gap-2 justify-center">💳 PayPal</span></a>
+        <a href="https://ko-fi.com" target="_blank" rel="noopener" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded-full shadow-lg transition-all transform hover:scale-105"><span class="flex items-center gap-2 justify-center">☕ Ko-fi</span></a>
+    </div>
+</section>
+
+<!-- Telegram Section -->
+<section class="glass-panel rounded-xl p-6 text-center border-2 border-blue-400 bg-blue-50 shadow-lg">
+    <span class="iconify text-blue-600 text-5xl mb-3 mx-auto" data-icon="mdi:telegram"></span>
+    <h3 class="text-xl font-bold text-gray-900 mb-2" id="tg-title">Trete unserem Telegram bei!</h3>
+    <p class="text-sm text-gray-600 mb-4 max-w-lg mx-auto" id="tg-text">Erhalte tägliche Angebote, Unterstützung und direkte Hilfe.</p>
+    <a href="https://t.me/ZaidMarketDE" target="_blank" rel="noopener" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-lg transition-all transform hover:scale-105 text-lg"><span class="flex items-center gap-2 justify-center"><span class="iconify text-2xl" data-icon="mdi:telegram"></span> ZaidMarketDE</span></a>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><span class="iconify text-red-500" data-icon="mdi:hand-heart"></span> <span id="serv-head">Services & Hilfe in DE</span></h2>
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-3">
+        <a href="https://www.jameda.de/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-red-50 border-2 border-red-300"><span class="iconify text-3xl text-red-600 mb-1 mx-auto" data-icon="mdi:hospital-box-outline"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-hosp">Krankenhäuser</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-hosp-sub">Ärzte & Kliniken</p></a>
+        <a href="https://www.ilovepdf.com/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-indigo-50 border-2 border-indigo-300"><span class="iconify text-3xl text-indigo-600 mb-1 mx-auto" data-icon="mdi:file-pdf-box"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-pdf">Dokumente</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-pdf-sub">PDF zu Word & Bilder</p></a>
+        <a href="https://www.deepl.com/translator" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-blue-50 border-2 border-blue-300"><span class="iconify text-3xl text-blue-600 mb-1 mx-auto" data-icon="mdi:translate"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-trans">Übersetzung</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-trans-sub">Dokumente & Briefe</p></a>
+        <a href="https://www.stepstone.de/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-green-50 border-2 border-green-300"><span class="iconify text-3xl text-green-600 mb-1 mx-auto" data-icon="mdi:briefcase-outline"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-job">Jobsuche</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-job-sub">Arbeit in DE</p></a>
+        <a href="https://www.dhl.de/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-yellow-50 border-2 border-yellow-300"><span class="iconify text-3xl text-yellow-600 mb-1 mx-auto" data-icon="mdi:package-variant-closed"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-ship">Versand</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-ship-sub">Ins Heimatland</p></a>
+        <a href="https://www.bamf.de/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-teal-50 border-2 border-teal-300"><span class="iconify text-3xl text-teal-600 mb-1 mx-auto" data-icon="mdi:account-group-outline"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-visa">Ausländerbehörde</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-visa-sub">Visum & Aufenthalt</p></a>
+        <a href="https://www.booking.com/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-cyan-50 border-2 border-cyan-300"><span class="iconify text-3xl text-cyan-600 mb-1 mx-auto" data-icon="mdi:bed-outline"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-hotel">Hotels</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-hotel-sub">Unterkünfte</p></a>
+        <a href="https://www.congstar.de/" target="_blank" rel="noopener" class="shop-card p-4 text-center bg-violet-50 border-2 border-violet-300"><span class="iconify text-3xl text-violet-600 mb-1 mx-auto" data-icon="mdi:cellphone"></span><h4 class="font-bold text-gray-800 text-sm" id="serv-mobile">Handy & Internet</h4><p class="text-[10px] text-gray-500 mt-1" id="serv-mobile-sub">Congstar & Co.</p></a>
+    </div>
+</section>
+
+</main>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            <div>
+                <h4 class="font-bold text-lg mb-2">🛡️ Zaid.Market V5</h4>
+                <p class="text-gray-400 text-sm" id="footer-desc">Ihre Plattform für Angebote, Services und Community in Deutschland.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2" id="footer-links-title">Rechtliches</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="#" onclick="openModal('impressum');return false;" class="text-gray-400 hover:text-white text-sm transition-colors" id="footer-impressum">Impressum</a>
+                    <a href="#" onclick="openModal('privacy');return false;" class="text-gray-400 hover:text-white text-sm transition-colors" id="footer-privacy">Datenschutz</a>
+                    <a href="#" onclick="openModal('terms');return false;" class="text-gray-400 hover:text-white text-sm transition-colors" id="footer-terms">AGB</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2" id="footer-social-title">Folge uns</h4>
+                <div class="flex gap-3">
+                    <a href="https://t.me/ZaidMarketDE" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 text-2xl transition-colors"><span class="iconify" data-icon="mdi:telegram"></span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2">🎬 Zaid Platform</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="https://muradtv75-oss.github.io/Zaid-Studio/" target="_blank" rel="noopener" class="text-gray-400 hover:text-cyan-400 text-sm transition-colors flex items-center gap-1">🎬 Zaid Studio</a>
+                    <a href="https://muradtv75-oss.github.io/Zaid-Games.com/" target="_blank" rel="noopener" class="text-gray-400 hover:text-yellow-400 text-sm transition-colors flex items-center gap-1">🎮 Zaid Games</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            <p>© 2024-2025 Zaid.Market V5 — <span id="footer-made">Made with ❤️ for the Arab community in Germany</span></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Telegram Float Button -->
+<a href="https://t.me/ZaidMarketDE" target="_blank" rel="noopener" class="telegram-float">
+    <span class="iconify text-2xl" data-icon="mdi:telegram"></span>
+    <span class="hidden sm:inline">Telegram</span>
+</a>
+
+<!-- Chat Float Button -->
+<button class="chat-float" onclick="toggleChat()" id="chatFloatBtn">💬</button>
+
+<!-- Chat Panel -->
+<div class="chat-panel" id="chatPanel">
+    <div class="chat-head">
+        <span>🤖</span>
+        <span id="chat-title-text">المساعد الذكي</span>
+        <button onclick="toggleChat()" style="margin-left:auto;background:none;border:none;color:white;font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+        <div class="chat-msg bot" id="chat-welcome">مرحباً! أنا المساعد الذكي لزيد ماركت. كيف يمكنني مساعدتك؟ 😊</div>
+    </div>
+    <div class="chat-quick" id="chatQuick">
+        <button class="chat-qbtn" onclick="quickReply('how')">📋 How to use</button>
+        <button class="chat-qbtn" onclick="quickReply('shopping')">🛒 Shopping</button>
+        <button class="chat-qbtn" onclick="quickReply('prayer')">🕌 Prayer</button>
+        <button class="chat-qbtn" onclick="quickReply('exchange')">💱 Exchange</button>
+        <button class="chat-qbtn" onclick="quickReply('tv')">📺 YouTube TV</button>
+        <button class="chat-qbtn" onclick="quickReply('contact')">📞 Contact</button>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="اكتب رسالتك..." onkeydown="if(event.key==='Enter')sendChat()">
+        <button onclick="sendChat()">➤</button>
+    </div>
+</div>
+
+<!-- Impressum Modal -->
+<div class="modal-overlay" id="modal-impressum" onclick="if(event.target===this)closeModal('impressum')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('impressum')">✕</button>
+        <h2>📜 Impressum</h2>
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p><strong>Name:</strong> [Vor- und Nachname]</p>
+        <p><strong>Adresse:</strong> [Straße und Hausnummer]<br>[PLZ und Ort]<br>Deutschland</p>
+        <p><strong>Kontakt:</strong><br>E-Mail: info@zaid-market.com<br>Telefon: [+49 xxx xxxxxxx]</p>
+        <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+        <p>[Vor- und Nachname]<br>[Adresse]<br>Deutschland</p>
+        <h3>Streitschlichtung</h3>
+        <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener" style="color:#2563eb;">https://ec.europa.eu/consumers/odr/</a></p>
+    </div>
+</div>
+
+<!-- Privacy Modal -->
+<div class="modal-overlay" id="modal-privacy" onclick="if(event.target===this)closeModal('privacy')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('privacy')">✕</button>
+        <h2>🔒 Datenschutzerklärung</h2>
+        <h3>1. Datenschutz auf einen Blick</h3>
+        <p>Diese Webseite verwendet keine Cookies zur Personenbeziehbaren Datenverarbeitung. Es werden keine personenbezogenen Daten gespeichert.</p>
+        <h3>2. Externe Dienste</h3>
+        <p>Wir nutzen YouTube-Einbindungen, Amazon-Partnerlinks und externe API-Dienste (Wechselkurse). Diese Dienste können eigene Datenschutzrichtlinien haben.</p>
+        <h3>3. Standortdaten</h3>
+        <p>Die Standortabfrage für Gebetszeiten erfolgt nur mit Ihrer ausdrücklichen Erlaubnis und wird nicht gespeichert oder übermittelt.</p>
+        <h3>4. Kontakt</h3>
+        <p>Bei Fragen zum Datenschutz: info@zaid-market.com</p>
+    </div>
+</div>
+
+<!-- Terms Modal -->
+<div class="modal-overlay" id="modal-terms" onclick="if(event.target===this)closeModal('terms')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('terms')">✕</button>
+        <h2>📋 Allgemeine Geschäftsbedingungen</h2>
+        <h3>1. Nutzung</h3>
+        <p>Diese Webseite bietet Links zu externen Anbietern. Wir sind nicht verantwortlich für die Inhalte externer Seiten.</p>
+        <h3>2. Affiliate-Links</h3>
+        <p>Einige Links sind Partnerlinks. Bei einem Kauf erhalten wir eine Provision ohne Mehrkosten für Sie.</p>
+        <h3>3. Gebetszeiten</h3>
+        <p>Die berechneten Gebetszeiten sind Näherungswerte und ersetzen nicht die offiziellen Angaben der örtlichen Moscheen.</p>
+        <h3>4. Wechselkurse</h3>
+        <p>Die angezeigten Kurse dienen nur der Information und sind keine offiziellen Wechselkurse.</p>
+    </div>
+</div>
+
+<script>
+/* =========================================
+   ZAID MARKET V5 - COMPLETE JAVASCRIPT
+   ========================================= */
+
+// === OBFUSCATED AFFILIATE CODE ===
+const _a = ['getnow','07d','-21'].join('');
+const _at = '?tag=' + _a;
+const _at2 = '&tag=' + _a;
+
+// === SANITIZE FUNCTION ===
+function sanitize(str) {
+    if (typeof str !== 'string') return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+// === INITIALIZE AFFILIATE LINKS ===
+function initAffiliateLinks() {
+    const links = {
+        'coupon-link': 'https://www.amazon.de/coupons/' + _at,
+        'prime-link': 'https://www.amazon.de/prime' + _at,
+        'firetv-link': 'https://www.amazon.de/s?k=Fire+TV+Stick' + _at2,
+        'shop-de-amz': 'https://www.amazon.de/' + _at,
+        'shop-de-tech': 'https://www.amazon.de/b/?node=562066' + _at2,
+        'shop-de-fashion': 'https://www.amazon.de/b/?node=77154031' + _at2,
+        'shop-de-deals': 'https://www.amazon.de/gp/goldbox/' + _at,
+        'shop-de-wohnen': 'https://www.amazon.de/b/?node=3167641' + _at2,
+        'shop-de-food': 'https://www.amazon.de/b/?node=340846031' + _at2,
+        'shop-ar-sa': 'https://www.amazon.sa/' + _at,
+        'shop-ar-ae': 'https://www.amazon.ae/' + _at,
+        'shop-ar-eg': 'https://www.amazon.eg/' + _at,
+        'earn-alexa-link': 'https://www.amazon.de/tryabud' + _at,
+    };
+    for (const [id, href] of Object.entries(links)) {
+        const el = document.getElementById(id);
+        if (el) el.href = href;
+    }
+}
+
+// === AMAZON SEARCH ===
+function searchAmazon() {
+    const input = document.getElementById('amazon-search-input');
+    const query = sanitize(input.value.trim());
+    if (!query) return;
+    window.open('https://www.amazon.de/s?k=' + encodeURIComponent(query) + _at2, '_blank', 'noopener');
+}
+
+// === FLOATING PARTICLES ===
+function createParticles() {
+    const container = document.getElementById('particles');
+    const colors = ['#818cf8','#a78bfa','#f9a8d4','#67e8f9','#fbbf24','#6ee7b7'];
+    for (let i = 0; i < 20; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 20 + 8;
+        p.style.width = size + 'px';
+        p.style.height = size + 'px';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        p.style.animationDuration = (Math.random() * 15 + 10) + 's';
+        p.style.animationDelay = (Math.random() * 10) + 's';
+        container.appendChild(p);
+    }
+}
+
+// === YOUTUBE TV ===
+let currentVid = 'pLbNjFIKFpo';
+let isMuted = true;
+
+function switchChannel(btn) {
+    document.querySelectorAll('.tv-ch-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentVid = btn.dataset.vid;
+    loadChannel();
+}
+
+function loadChannel() {
+    const iframe = document.getElementById('tvIframe');
+    const loading = document.getElementById('tvLoading');
+    loading.style.display = 'flex';
+    iframe.src = '';
+    setTimeout(() => {
+        const activeBtn = document.querySelector('.tv-ch-btn.active');
+        const isChannel = activeBtn && activeBtn.dataset.type === 'channel';
+        if (isChannel) {
+            iframe.src = 'https://www.youtube.com/embed/live_stream?channel=' + currentVid + '&autoplay=1&mute=' + (isMuted ? '1' : '0') + '&rel=0';
+        } else {
+            iframe.src = 'https://www.youtube.com/embed/' + currentVid + '?autoplay=1&mute=' + (isMuted ? '1' : '0') + '&rel=0';
+        }
+        iframe.onload = () => { loading.style.display = 'none'; };
+    }, 300);
+}
+
+function reloadChannel() { loadChannel(); }
+
+function toggleVolume() {
+    isMuted = !isMuted;
+    const btn = document.getElementById('volumeBtn');
+    btn.innerHTML = isMuted
+        ? '<span class="iconify" data-icon="mdi:volume-off"></span> 🔇'
+        : '<span class="iconify" data-icon="mdi:volume-high"></span> 🔊';
+    loadChannel();
+}
+
+function openYoutube() {
+    window.open('https://www.youtube.com/watch?v=' + currentVid, '_blank', 'noopener');
+}
+
+function toggleFullscreen() {
+    const tv = document.getElementById('tvSection');
+    if (tv.classList.contains('tv-fullscreen')) {
+        tv.classList.remove('tv-fullscreen');
+    } else {
+        tv.classList.add('tv-fullscreen');
+    }
+}
+
+// === CURRENCY EXCHANGE (LIVE) ===
+let exchangeRates = {};
+let lastRateUpdate = null;
+
+async function fetchRates() {
+    try {
+        const res = await fetch('https://api.exchangerate-api.com/v4/latest/EUR');
+        const data = await res.json();
+        exchangeRates = data.rates;
+        lastRateUpdate = new Date();
+        updateRateDisplay();
+    } catch (e) {
+        console.warn('Rate fetch failed:', e);
+    }
+}
+
+function updateRateDisplay() {
+    if (!exchangeRates || !exchangeRates.DZD) return;
+    const fmt = (v) => v.toFixed(2);
+    document.getElementById('rate-dzd').textContent = fmt(exchangeRates.DZD) + ' د.ج';
+    document.getElementById('rate-sar').textContent = fmt(exchangeRates.SAR) + ' ﷼';
+    document.getElementById('rate-aed').textContent = fmt(exchangeRates.AED) + ' د.إ';
+    document.getElementById('rate-egp').textContent = fmt(exchangeRates.EGP) + ' ج.م';
+    document.getElementById('rate-tnd').textContent = fmt(exchangeRates.TND) + ' د.ت';
+    document.getElementById('rate-mad').textContent = fmt(exchangeRates.MAD) + ' د.م';
+    if (lastRateUpdate) {
+        document.getElementById('rateTimestamp').textContent =
+            '⏰ ' + lastRateUpdate.toLocaleTimeString();
+    }
+}
+
+// Auto-refresh every 30 minutes
+setInterval(fetchRates, 30 * 60 * 1000);
+
+// === PRAYER TIMES (SIMPLIFIED ASTRONOMICAL CALCULATION) ===
+let prayerLat = 51.1657;
+let prayerLon = 10.4515;
+let prayerTimes = {};
+
+function toRad(d) { return d * Math.PI / 180; }
+function toDeg(r) { return r * 180 / Math.PI; }
+
+function calculatePrayerTimes(lat, lon, date) {
+    const jd = Math.floor(date.getTime() / 86400000) + 2440587.5;
+    const D = jd - 2451545.0;
+    const g = toRad(357.529 + 0.98560028 * D);
+    const q = toRad(280.459 + 0.98564736 * D);
+    const L = toRad(q + toDeg(1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g)));
+    const e = toRad(23.439 - 0.00000036 * D);
+    const RA = toDeg(Math.atan2(Math.cos(e) * Math.sin(L), Math.cos(L))) / 15;
+    const dec = toDeg(Math.asin(Math.sin(e) * Math.sin(L)));
+    const n = Math.floor(date.getTime() / 86400000) - 6;
+    const Jnoon = 2451545.0 + n - lon / 360;
+    const T = (Jnoon - 2451545.0) / 36525;
+    const T0 = (6.6974243242 + 2400.051329 * T + 0.000025862 * T * T) % 24;
+    const alpha = (RA + 0.0000001) % 24;
+    const noonGMT = (12 - alpha + T0 + lon / 15) % 24;
+    const noonLocal = (noonGMT + 1) % 24; // CET
+
+    const noonH = Math.floor(noonLocal);
+    const noonM = Math.floor((noonLocal - noonH) * 60);
+
+    // Sun altitude calculations for Fajr and Isha
+    const sunAltNoon = 90 - Math.abs(lat) + Math.abs(dec);
+
+    // Hour angle for sun altitude
+    function hourAngle(altitude) {
+        const cosH = (Math.sin(toRad(altitude)) - Math.sin(toRad(lat)) * Math.sin(toRad(dec))) /
+                     (Math.cos(toRad(lat)) * Math.cos(toRad(dec)));
+        if (cosH > 1) return 0; // Sun never reaches this altitude
+        if (cosH < -1) return 180;
+        return toDeg(Math.acos(cosH));
+    }
+
+    const sunriseHA = hourAngle(-0.833);
+    const fajrHA = hourAngle(-18);
+    const ishaHA = hourAngle(-17);
+    const asrHA = hourAngle(90 - Math.abs(lat - dec)); // Shafi'i: shadow = object
+
+    // Asr calculation (standard: shadow factor = 1)
+    const asrAlt = 90 - Math.abs(lat - dec);
+    const asrHACalc = hourAngle(Math.atan(1 + Math.tan(toRad(Math.abs(lat - dec)))) * 180 / Math.PI);
+
+    const sunriseTime = noonLocal - sunriseHA / 15;
+    const fajrTime = noonLocal - fajrHA / 15;
+    const ishaTime = noonLocal + ishaHA / 15;
+    const asrTime = noonLocal + asrHACalc / 15;
+    const maghribTime = noonLocal + sunriseHA / 15;
+
+    function fmt(t) {
+        if (t < 0) t += 24;
+        if (t >= 24) t -= 24;
+        const h = Math.floor(t);
+        const m = Math.floor((t - h) * 60);
+        return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+    }
+
+    return {
+        fajr: fmt(fajrTime),
+        sunrise: fmt(sunriseTime),
+        dhuhr: fmt(noonLocal),
+        asr: fmt(asrTime),
+        maghrib: fmt(maghribTime),
+        isha: fmt(ishaTime),
+        _raw: { fajr: fajrTime, sunrise: sunriseTime, dhuhr: noonLocal, asr: asrTime, maghrib: maghribTime, isha: ishaTime }
+    };
+}
+
+function updatePrayerDisplay() {
+    const now = new Date();
+    const times = calculatePrayerTimes(prayerLat, prayerLon, now);
+    prayerTimes = times;
+
+    document.getElementById('pt-fajr').textContent = times.fajr;
+    document.getElementById('pt-sunrise').textContent = times.sunrise;
+    document.getElementById('pt-dhuhr').textContent = times.dhuhr;
+    document.getElementById('pt-asr').textContent = times.asr;
+    document.getElementById('pt-maghrib').textContent = times.maghrib;
+    document.getElementById('pt-isha').textContent = times.isha;
+
+    // Highlight next prayer
+    const currentHours = now.getHours() + now.getMinutes() / 60;
+    const prayerNames = ['fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'isha'];
+    const prayerLabels = {
+        fajr: { ar: 'الفجر', en: 'Fajr', de: 'Fajr' },
+        sunrise: { ar: 'الشروق', en: 'Sunrise', de: 'Sonnenaufgang' },
+        dhuhr: { ar: 'الظهر', en: 'Dhuhr', de: 'Dhuhr' },
+        asr: { ar: 'العصر', en: 'Asr', de: 'Asr' },
+        maghrib: { ar: 'المغرب', en: 'Maghrib', de: 'Maghrib' },
+        isha: { ar: 'العشاء', en: 'Isha', de: 'Isha' }
+    };
+
+    // Reset all cards
+    prayerNames.forEach(p => {
+        const card = document.getElementById('pc-' + p);
+        if (card) card.classList.remove('next-prayer');
+    });
+
+    let nextPrayerName = null;
+    for (const name of prayerNames) {
+        if (times._raw[name] > currentHours) {
+            nextPrayerName = name;
+            break;
+        }
+    }
+    if (!nextPrayerName) nextPrayerName = 'fajr'; // Next day
+
+    if (nextPrayerName) {
+        const card = document.getElementById('pc-' + nextPrayerName);
+        if (card) card.classList.add('next-prayer');
+
+        const lang = currentLang;
+        const label = prayerLabels[nextPrayerName];
+        document.getElementById('nextPrayer').textContent = label[lang] || label.ar;
+
+        // Countdown
+        let diff = times._raw[nextPrayerName] - currentHours;
+        if (diff < 0) diff += 24;
+        const diffH = Math.floor(diff);
+        const diffM = Math.floor((diff - diffH) * 60);
+        const diffS = Math.floor(((diff - diffH) * 60 - diffM) * 60);
+        document.getElementById('nextPrayerCountdown').textContent =
+            String(diffH).padStart(2, '0') + ':' + String(diffM).padStart(2, '0') + ':' + String(diffS).padStart(2, '0');
+    }
+
+    // Update prayer card labels based on language
+    const nameMap = {
+        fajr: { ar: 'الفجر', en: 'Fajr', de: 'Fajr' },
+        sunrise: { ar: 'الشروق', en: 'Sunrise', de: 'Sonnenaufg.' },
+        dhuhr: { ar: 'الظهر', en: 'Dhuhr', de: 'Dhuhr' },
+        asr: { ar: 'العصر', en: 'Asr', de: 'Asr' },
+        maghrib: { ar: 'المغرب', en: 'Maghrib', de: 'Maghrib' },
+        isha: { ar: 'العشاء', en: 'Isha', de: 'Isha' }
+    };
+    prayerNames.forEach(p => {
+        const card = document.getElementById('pc-' + p);
+        if (card) {
+            const labelEl = card.querySelector('div:first-child');
+            if (labelEl && nameMap[p]) labelEl.textContent = nameMap[p][currentLang] || nameMap[p].ar;
+        }
+    });
+
+    document.getElementById('next-prayer-label').textContent = T[currentLang].nextPrayerLabel;
+}
+
+function detectLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (pos) => {
+                prayerLat = pos.coords.latitude;
+                prayerLon = pos.coords.longitude;
+                updatePrayerDisplay();
+                document.getElementById('prayer-subtitle').textContent =
+                    T[currentLang].locationDetected;
+            },
+            () => {
+                alert(T[currentLang].locationDenied);
+            }
+        );
+    }
+}
+
+// === HIJRI DATE APPROXIMATION ===
+function getHijriDate(date) {
+    const jd = Math.floor(date.getTime() / 86400000) + 2440587.5;
+    const l = Math.floor(jd - 1948440 + 10632);
+    const n = Math.floor((l - 1) / 10631);
+    const l2 = l - 10631 * n + 354;
+    const j = Math.floor((10985 - l2) / 5316) * Math.floor((50 * l2) / 17719) + Math.floor(l2 / 5670) * Math.floor((43 * l2) / 15238);
+    const l3 = l2 - Math.floor((30 - j) / 15) * Math.floor((17719 * j) / 50) - Math.floor(j / 16) * Math.floor((15238 * j) / 43) + 29;
+    const m = Math.floor((24 * l3) / 709);
+    const d = l3 - Math.floor((709 * m) / 24);
+    const y = 30 * n + j - 30;
+    const months = ['محرم','صفر','ربيع الأول','ربيع الثاني','جمادى الأولى','جمادى الثانية','رجب','شعبان','رمضان','شوال','ذو القعدة','ذو الحجة'];
+    return d + ' ' + months[m - 1] + ' ' + y + ' هـ';
+}
+
+// === CLOCK & COUNTDOWN UPDATE ===
+function updateClock() {
+    const now = new Date();
+    document.getElementById('currentTime').textContent = now.toLocaleTimeString('de-DE');
+    document.getElementById('hijriDate').textContent = getHijriDate(now);
+    updatePrayerDisplay();
+}
+
+// === LANGUAGE SYSTEM ===
+let currentLang = localStorage.getItem('zaid-lang') || 'de';
+
+const T = {
+    de: {
+        gpTitle: 'Spaße Lernspiele für deine Kinder! 🚀',
+        gpDesc: '15+ weltbekannte Spiele - Fruit Ninja, Doodle Jump, Snake, 2048 und mehr - kostenlos!',
+        qrTitle: 'Auf dem Handy öffnen',
+        euroTitle: 'Euro-Kurs Heute',
+        searchTitle: 'Amazon Schnellsuche',
+        searchPlaceholder: 'Suche auf Amazon...',
+        couponBtn: 'Amazon Gutscheine',
+        primeBtn: 'Prime Gratis Testen',
+        fireTitle: 'Arabische Sender auf dem TV?',
+        fireText: 'Hol dir den Fire TV Stick von Amazon. Einfach einstecken und Apps wie Shahid & Co. legal nutzen!',
+        fireBtn: 'Auf Amazon ansehen →',
+        affiliateNotice: '<strong>Transparenz-Hinweis:</strong> Einige Links sind Affiliate-Links. Wenn Sie über diese Links einkaufen, erhalten wir eine Provision ohne zusätzliche Kosten für Sie.',
+        shopDeTitle: 'Top Shops in Deutschland',
+        shopArabHead: 'Shops im Nahen Osten',
+        convTitle: '📄 Dokumentenkonverter',
+        convDesc: 'Konvertiere PDF-Dateien in Word, Excel oder Bilder - schnell und einfach!',
+        convPdfWord: 'PDF → Word',
+        convPdfExcel: 'PDF → Excel',
+        convPdfImg: 'PDF → Bilder',
+        convUpload: 'PDF hochladen',
+        earnTitle: '💰 Verdienen & Sparen',
+        earnDesc: 'Exklusive Angebote, die dir Geld sparen und Einnahmen bringen!',
+        earnInsurance: 'Versicherung vergleichen',
+        earnBank: 'N26 Bankkonto',
+        earnCashback: 'Shoop Cashback',
+        earnAlexa: 'Amazon Alexa',
+        prayerMainTitle: 'Gebetszeiten',
+        prayerSubtitle: 'Deutschland - Germany',
+        nextPrayerLabel: 'Nächstes Gebet',
+        detectLocBtn: 'Standort ermitteln',
+        locationDetected: 'Standort erkannt ✓',
+        locationDenied: 'Standortzugriff verweigert. Standard: Deutschland.',
+        supportTitle: 'Unterstütze unser Projekt',
+        supportText: 'Jede Unterstützung hilft uns, dieses Projekt weiterzuentwickeln. Vielen Dank!',
+        tgTitle: 'Trete unserem Telegram bei!',
+        tgText: 'Erhalte tägliche Angebote, Unterstützung und direkte Hilfe.',
+        servHead: 'Services & Hilfe in DE',
+        tvTitle: 'YouTube TV',
+        tvLoadingText: 'Laden...',
+        euroClickText: 'Klicken für Live-Kurse',
+        shopAmz: 'Alles für den Alltag',
+        shopMedia: 'Elektronik & Technik',
+        shopShein: 'Mode & Kleidung',
+        shopEbay: 'Tagesangebote',
+        shopAli: 'Direkt aus China',
+        shopOtto: 'Wohnen & Lifestyle',
+        shopLidl: 'Lebensmittel',
+        shopSa: 'Saudi Arabien',
+        shopUae: 'Emirate & Qatar',
+        shopNoon: 'Golf Angebote',
+        shopEg: 'Ägypten & Algerien',
+        shopDz: 'Algerien & Marokko',
+        shopNamshi: 'Mode & Schuhe',
+        servHosp: 'Krankenhäuser',
+        servHospSub: 'Ärzte & Kliniken',
+        servPdf: 'Dokumente',
+        servPdfSub: 'PDF zu Word & Bilder',
+        servTrans: 'Übersetzung',
+        servTransSub: 'Dokumente & Briefe',
+        servJob: 'Jobsuche',
+        servJobSub: 'Arbeit in DE',
+        servShip: 'Versand',
+        servShipSub: 'Ins Heimatland',
+        servVisa: 'Ausländerbehörde',
+        servVisaSub: 'Visum & Aufenthalt',
+        servHotel: 'Hotels',
+        servHotelSub: 'Unterkünfte',
+        servMobile: 'Handy & Internet',
+        servMobileSub: 'Congstar & Co.',
+        footerDesc: 'Ihre Plattform für Angebote, Services und Community in Deutschland.',
+        footerLinksTitle: 'Rechtliches',
+        footerImpressum: 'Impressum',
+        footerPrivacy: 'Datenschutz',
+        footerTerms: 'AGB',
+        footerSocialTitle: 'Folge uns',
+        footerMade: 'Made with ❤️ for the Arab community in Germany',
+        chatTitle: 'Smart Assistant',
+        chatWelcome: 'Hallo! Ich bin der Smart Assistant von Zaid Market. Wie kann ich helfen? 😊',
+        chatPlaceholder: 'Schreibe deine Nachricht...',
+    },
+    en: {
+        gpTitle: 'Fun Educational Games for Kids! 🚀',
+        gpDesc: '15+ world-famous games - Fruit Ninja, Doodle Jump, Snake, 2048 and more - free!',
+        qrTitle: 'Open on Mobile',
+        euroTitle: 'Euro Rate Today',
+        searchTitle: 'Amazon Quick Search',
+        searchPlaceholder: 'Search on Amazon...',
+        couponBtn: 'Amazon Coupons',
+        primeBtn: 'Try Prime Free',
+        fireTitle: 'Arabic Channels on TV?',
+        fireText: 'Get the Fire TV Stick from Amazon. Simply plug in and use apps like Shahid & Co. legally!',
+        fireBtn: 'View on Amazon →',
+        affiliateNotice: '<strong>Transparency Notice:</strong> Some links are affiliate links. If you purchase through these links, we receive a commission at no extra cost to you.',
+        shopDeTitle: 'Top Shops in Germany',
+        shopArabHead: 'Shops in the Middle East',
+        convTitle: '📄 Document Converter',
+        convDesc: 'Convert PDF files to Word, Excel or images - fast and easy!',
+        convPdfWord: 'PDF → Word',
+        convPdfExcel: 'PDF → Excel',
+        convPdfImg: 'PDF → Images',
+        convUpload: 'Upload PDF',
+        earnTitle: '💰 Earn & Save',
+        earnDesc: 'Exclusive deals that save you money and increase your income!',
+        earnInsurance: 'Compare Insurance',
+        earnBank: 'N26 Bank Account',
+        earnCashback: 'Shoop Cashback',
+        earnAlexa: 'Amazon Alexa',
+        prayerMainTitle: 'Prayer Times',
+        prayerSubtitle: 'Germany - Deutschland',
+        nextPrayerLabel: 'Next Prayer',
+        detectLocBtn: 'Detect My Location',
+        locationDetected: 'Location detected ✓',
+        locationDenied: 'Location access denied. Default: Germany.',
+        supportTitle: 'Support Our Project',
+        supportText: 'Every support helps us develop this project further. Thank you!',
+        tgTitle: 'Join our Telegram!',
+        tgText: 'Get daily deals, support and direct help.',
+        servHead: 'Services & Help in DE',
+        tvTitle: 'YouTube TV',
+        tvLoadingText: 'Loading...',
+        euroClickText: 'Click for live rates',
+        shopAmz: 'Everything for daily life',
+        shopMedia: 'Electronics & Tech',
+        shopShein: 'Fashion & Clothing',
+        shopEbay: 'Daily Deals',
+        shopAli: 'Direct from China',
+        shopOtto: 'Living & Lifestyle',
+        shopLidl: 'Groceries',
+        shopSa: 'Saudi Arabia',
+        shopUae: 'Emirates & Qatar',
+        shopNoon: 'Gulf Deals',
+        shopEg: 'Egypt & Algeria',
+        shopDz: 'Algeria & Morocco',
+        shopNamshi: 'Fashion & Shoes',
+        servHosp: 'Hospitals',
+        servHospSub: 'Doctors & Clinics',
+        servPdf: 'Documents',
+        servPdfSub: 'PDF to Word & Images',
+        servTrans: 'Translation',
+        servTransSub: 'Documents & Letters',
+        servJob: 'Job Search',
+        servJobSub: 'Work in DE',
+        servShip: 'Shipping',
+        servShipSub: 'To Home Country',
+        servVisa: 'Immigration Office',
+        servVisaSub: 'Visa & Residence',
+        servHotel: 'Hotels',
+        servHotelSub: 'Accommodations',
+        servMobile: 'Mobile & Internet',
+        servMobileSub: 'Congstar & Co.',
+        footerDesc: 'Your platform for deals, services and community in Germany.',
+        footerLinksTitle: 'Legal',
+        footerImpressum: 'Impressum',
+        footerPrivacy: 'Privacy Policy',
+        footerTerms: 'Terms',
+        footerSocialTitle: 'Follow Us',
+        footerMade: 'Made with ❤️ for the Arab community in Germany',
+        chatTitle: 'Smart Assistant',
+        chatWelcome: 'Hello! I am Zaid Market\'s Smart Assistant. How can I help? 😊',
+        chatPlaceholder: 'Type your message...',
+    },
+    ar: {
+        gpTitle: 'ألعاب تعليمية ممتعة لأطفالك! 🚀',
+        gpDesc: '15+ لعبة عالمية شهيرة - Fruit Ninja, Doodle Jump, Snake, 2048 وأكثر - مجاناً!',
+        qrTitle: 'افتح على الجوال',
+        euroTitle: 'سعر اليورو اليوم',
+        searchTitle: 'بحث سريع في أمازون',
+        searchPlaceholder: 'ابحث في أمازون...',
+        couponBtn: 'كوبونات أمازون',
+        primeBtn: 'تجربة برايم مجاناً',
+        fireTitle: 'قنوات عربية على التلفاز؟',
+        fireText: 'احصل على Fire TV Stick من أمازون. وصله وشغّل تطبيقات مثل شاهد وغيرها بشكل قانوني!',
+        fireBtn: '← شاهد على أمازون',
+        affiliateNotice: '<strong>إشعار الشفافية:</strong> بعض الروابط هي روابط تابعة. عند الشراء عبر هذه الروابط، نحصل على عمولة بدون أي تكلفة إضافية عليك.',
+        shopDeTitle: 'أفضل المتاجر في ألمانيا',
+        shopArabHead: 'متاجر الشرق الأوسط',
+        convTitle: '📄 محول الوثائق',
+        convDesc: 'حوّل ملفات PDF إلى Word أو Excel أو صور بسهولة وسرعة!',
+        convPdfWord: 'PDF → Word',
+        convPdfExcel: 'PDF → Excel',
+        convPdfImg: 'PDF → صور',
+        convUpload: 'رفع ملف PDF',
+        earnTitle: '💰 اربح ووفّر',
+        earnDesc: 'عروض حصرية توفّر عليك وتزيد مدخولك! عمولات ومكافآت لكل تسجيل',
+        earnInsurance: 'مقارنة تأمين',
+        earnBank: 'حساب بنكي N26',
+        earnCashback: 'كاشباك Shoop',
+        earnAlexa: 'أمازون أليكسا',
+        prayerMainTitle: 'مواقيت الصلاة',
+        prayerSubtitle: 'ألمانيا - Deutschland',
+        nextPrayerLabel: 'الصلاة القادمة',
+        detectLocBtn: 'تحديد موقعي',
+        locationDetected: 'تم تحديد الموقع ✓',
+        locationDenied: 'تم رفض الوصول للموقع. الافتراضي: ألمانيا.',
+        supportTitle: 'ادعم مشروعنا',
+        supportText: 'كل دعم يساعدنا في تطوير هذا المشروع. شكراً لكم!',
+        tgTitle: 'انضم لتيليجرام!',
+        tgText: 'احصل على العروض اليومية والدعم والمساعدة المباشرة.',
+        servHead: 'خدمات ومساعدة في ألمانيا',
+        tvTitle: 'يوتيوب تي في',
+        tvLoadingText: 'جاري التحميل...',
+        euroClickText: 'اضغط لعرض الأسعار المباشرة',
+        shopAmz: 'كل شيء لليوم',
+        shopMedia: 'إلكترونيات وتقنية',
+        shopShein: 'أزياء وملابس',
+        shopEbay: 'عروض اليوم',
+        shopAli: 'من الصين مباشرة',
+        shopOtto: 'المنزل وأسلوب الحياة',
+        shopLidl: 'مواد غذائية',
+        shopSa: 'السعودية',
+        shopUae: 'الإمارات وقطر',
+        shopNoon: 'عروض الخليج',
+        shopEg: 'مصر والجزائر',
+        shopDz: 'الجزائر والمغرب',
+        shopNamshi: 'أزياء وأحذية',
+        servHosp: 'مستشفيات',
+        servHospSub: 'أطباء وعيادات',
+        servPdf: 'وثائق',
+        servPdfSub: 'PDF إلى Word وصور',
+        servTrans: 'ترجمة',
+        servTransSub: 'وثائق ورسائل',
+        servJob: 'بحث عن عمل',
+        servJobSub: 'العمل في ألمانيا',
+        servShip: 'شحن',
+        servShipSub: 'إلى بلدك',
+        servVisa: 'دائرة الأجانب',
+        servVisaSub: 'تأشيرة وإقامة',
+        servHotel: 'فنادق',
+        servHotelSub: 'سكن وإقامة',
+        servMobile: 'موبايل وإنترنت',
+        servMobileSub: 'كونجستار وغيرها',
+        footerDesc: 'منصتكم للعروض والخدمات والمجتمع في ألمانيا.',
+        footerLinksTitle: 'قانوني',
+        footerImpressum: 'إمبريسوم',
+        footerPrivacy: 'سياسة الخصوصية',
+        footerTerms: 'الشروط',
+        footerSocialTitle: 'تابعنا',
+        footerMade: 'صنع بـ ❤️ للمجتمع العربي في ألمانيا',
+        chatTitle: 'المساعد الذكي',
+        chatWelcome: 'مرحباً! أنا المساعد الذكي لزيد ماركت. كيف يمكنني مساعدتك؟ 😊',
+        chatPlaceholder: 'اكتب رسالتك...',
+    }
+};
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('zaid-lang', lang);
+    document.documentElement.lang = lang === 'ar' ? 'ar' : lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    applyTranslations();
+}
+
+function applyTranslations() {
+    const t = T[currentLang];
+    // Games promo
+    document.getElementById('gp-title').textContent = t.gpTitle;
+    document.getElementById('gp-desc').textContent = t.gpDesc;
+    // QR
+    document.getElementById('qr-title').textContent = t.qrTitle;
+    // Euro
+    document.getElementById('euro-title').innerHTML = t.euroTitle + ' <span class="live-dot"></span>';
+    document.getElementById('euro-click-text').textContent = t.euroClickText;
+    // Search
+    document.getElementById('search-title').textContent = t.searchTitle;
+    document.getElementById('amazon-search-input').placeholder = t.searchPlaceholder;
+    document.getElementById('coupon-btn').textContent = t.couponBtn;
+    document.getElementById('prime-btn').textContent = t.primeBtn;
+    // Fire TV
+    document.getElementById('fire-title').textContent = t.fireTitle;
+    document.getElementById('fire-text').textContent = t.fireText;
+    document.getElementById('fire-btn').textContent = t.fireBtn;
+    // Affiliate
+    document.getElementById('affiliate-notice').innerHTML = t.affiliateNotice;
+    // Shopping DE
+    document.getElementById('shop-de-title').textContent = t.shopDeTitle;
+    document.getElementById('shop-amz').textContent = t.shopAmz;
+    document.getElementById('shop-media').textContent = t.shopMedia;
+    document.getElementById('shop-shein').textContent = t.shopShein;
+    document.getElementById('shop-ebay').textContent = t.shopEbay;
+    document.getElementById('shop-ali').textContent = t.shopAli;
+    document.getElementById('shop-otto').textContent = t.shopOtto;
+    document.getElementById('shop-lidl').textContent = t.shopLidl;
+    // Shopping Arab
+    document.getElementById('shop-arab-head').textContent = t.shopArabHead;
+    document.getElementById('shop-sa').textContent = t.shopSa;
+    document.getElementById('shop-uae').textContent = t.shopUae;
+    document.getElementById('shop-noon').textContent = t.shopNoon;
+    document.getElementById('shop-eg').textContent = t.shopEg;
+    document.getElementById('shop-dz').textContent = t.shopDz;
+    document.getElementById('shop-namshi').textContent = t.shopNamshi;
+    // Converter
+    document.getElementById('conv-title').textContent = t.convTitle;
+    document.getElementById('conv-desc').textContent = t.convDesc;
+    document.getElementById('conv-pdf-word').textContent = t.convPdfWord;
+    document.getElementById('conv-pdf-excel').textContent = t.convPdfExcel;
+    document.getElementById('conv-pdf-img').textContent = t.convPdfImg;
+    document.getElementById('conv-upload').textContent = t.convUpload;
+    // Earn
+    document.getElementById('earn-title').textContent = t.earnTitle;
+    document.getElementById('earn-desc').textContent = t.earnDesc;
+    document.getElementById('earn-insurance').textContent = t.earnInsurance;
+    document.getElementById('earn-bank').textContent = t.earnBank;
+    document.getElementById('earn-cashback').textContent = t.earnCashback;
+    document.getElementById('earn-alexa').textContent = t.earnAlexa;
+    // Prayer
+    document.getElementById('prayer-main-title').textContent = t.prayerMainTitle;
+    document.getElementById('prayer-subtitle').textContent = t.prayerSubtitle;
+    document.getElementById('detect-loc-btn').textContent = t.detectLocBtn;
+    // Support
+    document.getElementById('support-title').textContent = t.supportTitle;
+    document.getElementById('support-text').textContent = t.supportText;
+    // Telegram
+    document.getElementById('tg-title').textContent = t.tgTitle;
+    document.getElementById('tg-text').textContent = t.tgText;
+    // Services
+    document.getElementById('serv-head').textContent = t.servHead;
+    document.getElementById('serv-hosp').textContent = t.servHosp;
+    document.getElementById('serv-hosp-sub').textContent = t.servHospSub;
+    document.getElementById('serv-pdf').textContent = t.servPdf;
+    document.getElementById('serv-pdf-sub').textContent = t.servPdfSub;
+    document.getElementById('serv-trans').textContent = t.servTrans;
+    document.getElementById('serv-trans-sub').textContent = t.servTransSub;
+    document.getElementById('serv-job').textContent = t.servJob;
+    document.getElementById('serv-job-sub').textContent = t.servJobSub;
+    document.getElementById('serv-ship').textContent = t.servShip;
+    document.getElementById('serv-ship-sub').textContent = t.servShipSub;
+    document.getElementById('serv-visa').textContent = t.servVisa;
+    document.getElementById('serv-visa-sub').textContent = t.servVisaSub;
+    document.getElementById('serv-hotel').textContent = t.servHotel;
+    document.getElementById('serv-hotel-sub').textContent = t.servHotelSub;
+    document.getElementById('serv-mobile').textContent = t.servMobile;
+    document.getElementById('serv-mobile-sub').textContent = t.servMobileSub;
+    // TV
+    document.getElementById('tv-title').textContent = t.tvTitle;
+    document.getElementById('tv-loading-text').textContent = t.tvLoadingText;
+    // Footer
+    document.getElementById('footer-desc').textContent = t.footerDesc;
+    document.getElementById('footer-links-title').textContent = t.footerLinksTitle;
+    document.getElementById('footer-impressum').textContent = t.footerImpressum;
+    document.getElementById('footer-privacy').textContent = t.footerPrivacy;
+    document.getElementById('footer-terms').textContent = t.footerTerms;
+    document.getElementById('footer-social-title').textContent = t.footerSocialTitle;
+    document.getElementById('footer-made').textContent = t.footerMade;
+    // Chat
+    document.getElementById('chat-title-text').textContent = t.chatTitle;
+    document.getElementById('chat-welcome').textContent = t.chatWelcome;
+    document.getElementById('chatInput').placeholder = t.chatPlaceholder;
+
+    // Update prayer times labels
+    updatePrayerDisplay();
+}
+
+// === MODAL FUNCTIONS ===
+function openModal(name) {
+    const modal = document.getElementById('modal-' + name);
+    if (modal) modal.classList.add('open');
+}
+
+function closeModal(name) {
+    const modal = document.getElementById('modal-' + name);
+    if (modal) modal.classList.remove('open');
+}
+
+// === CHATBOT ===
+function toggleChat() {
+    const panel = document.getElementById('chatPanel');
+    panel.classList.toggle('open');
+}
+
+function quickReply(type) {
+    const t = T[currentLang];
+    let response = '';
+    switch (type) {
+        case 'how':
+            response = currentLang === 'ar'
+                ? '📝 بحث أمازون + بث مباشر + صلاة + سعر يورو'
+                : currentLang === 'de'
+                ? '📝 Amazon-Suche + Live-TV + Gebete + Euro-Kurs'
+                : '📝 Amazon search + Live TV + Prayer times + Euro rate';
+            break;
+        case 'shopping':
+            response = currentLang === 'ar'
+                ? '🛒 عروض أمازون اليومية + علي إكسبرس و noon'
+                : currentLang === 'de'
+                ? '🛒 Amazon Tagesangebote + AliExpress & Noon'
+                : '🛒 Amazon daily deals + AliExpress & Noon';
+            break;
+        case 'prayer':
+            response = currentLang === 'ar'
+                ? '🕌 مواقيت الصلاة محسوبة تلقائياً لألمانيا. اضغط "تحديد موقعي" لأوقات أدق.'
+                : currentLang === 'de'
+                ? '🕌 Gebetszeiten automatisch für Deutschland. Klicke "Standort ermitteln" für genauere Zeiten.'
+                : '🕌 Prayer times auto-calculated for Germany. Click "Detect My Location" for accuracy.';
+            break;
+        case 'exchange':
+            response = currentLang === 'ar'
+                ? '💱 أسعار اليورو تحدّث كل 30 دقيقة: دينار، ريال، درهم، جنيه، دينار تونسي، درهم مغربي'
+                : currentLang === 'de'
+                ? '💱 Euro-Kurse alle 30 Min. aktualisiert: DZD, SAR, AED, EGP, TND, MAD'
+                : '💱 Euro rates updated every 30 min: DZD, SAR, AED, EGP, TND, MAD';
+            break;
+        case 'tv':
+            response = currentLang === 'ar'
+                ? '📺 يوتيوب تي في:\n- مكة المكرمة بث مباشر\n- المدينة المنورة بث مباشر\n- الجزيرة عربي\n- الجزيرة إنجليزي\n- ⚽ Eurosport\n- 🏆 BeIN Sport'
+                : currentLang === 'de'
+                ? '📺 YouTube TV:\n- Makkah Live\n- Madinah Live\n- Al Jazeera Arab\n- Al Jazeera English\n- ⚽ Eurosport\n- 🏆 BeIN Sport'
+                : '📺 YouTube TV:\n- Makkah Live\n- Madinah Live\n- Al Jazeera Arab\n- Al Jazeera English\n- ⚽ Eurosport\n- 🏆 BeIN Sport';
+            break;
+        case 'contact':
+            response = currentLang === 'ar'
+                ? '📞 تواصل معنا:\nTelegram: @ZaidMarketDE\nالبريد: info@zaid-market.com'
+                : currentLang === 'de'
+                ? '📞 Kontakt:\nTelegram: @ZaidMarketDE\nE-Mail: info@zaid-market.com'
+                : '📞 Contact:\nTelegram: @ZaidMarketDE\nEmail: info@zaid-market.com';
+            break;
+    }
+    addBotMessage(response);
+}
+
+function addBotMessage(text) {
+    const msgs = document.getElementById('chatMsgs');
+    const div = document.createElement('div');
+    div.className = 'chat-msg bot';
+    div.textContent = text;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+}
+
+function addUserMessage(text) {
+    const msgs = document.getElementById('chatMsgs');
+    const div = document.createElement('div');
+    div.className = 'chat-msg user';
+    div.textContent = text;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+}
+
+function sendChat() {
+    const input = document.getElementById('chatInput');
+    const text = sanitize(input.value.trim());
+    if (!text) return;
+    addUserMessage(text);
+    input.value = '';
+
+    // Smart keyword-based responses
+    const lower = text.toLowerCase();
+    let response = '';
+
+    // Greetings
+    if (/^(hi|hello|hallo|مرحبا|هلا|سلام|اهلا|أهلا)/.test(lower)) {
+        response = currentLang === 'ar' ? 'أهلاً وسهلاً! 😊 كيف يمكنني مساعدتك؟'
+                 : currentLang === 'de' ? 'Hallo! 😊 Wie kann ich dir helfen?'
+                 : 'Hello! 😊 How can I help you?';
+    }
+    // Shopping
+    else if (/amazon|تسوق|shop|kauf|شراء|عروض|deal|offer|coupons|كوبون/.test(lower)) {
+        quickReply('shopping');
+        return;
+    }
+    // Prayer
+    else if (/prayer|صلاة|صلاه|gebet|fajr|dhuhr|asr|maghrib|isha|فجر|ظهر|عصر|مغرب|عشاء/.test(lower)) {
+        quickReply('prayer');
+        return;
+    }
+    // Exchange
+    else if (/euro|يورو|rate|wechsel|صرافة|صرف|dinar|دينار|riyal|ريال|درهم|dirham|جنيه|pound/.test(lower)) {
+        quickReply('exchange');
+        return;
+    }
+    // TV
+    else if (/tv|يوتيوب|youtube|مكة|مدينة|جزيرة|قرآن|makkah|madinah|live|بث/.test(lower)) {
+        quickReply('tv');
+        return;
+    }
+    // Thanks
+    else if (/شكر|thanks|danke| merci|thank you|جزاك/.test(lower)) {
+        response = currentLang === 'ar' ? 'العفو! 😊 سعداء بمساعدتك'
+                 : currentLang === 'de' ? 'Gern geschehen! 😊'
+                 : 'You\'re welcome! 😊';
+    }
+    // Help
+    else if (/help|مساعدة|مساعده|hilfe|كيف|how/.test(lower)) {
+        quickReply('how');
+        return;
+    }
+    // Contact
+    else if (/contact|تواصل|اتصل|kontakt|telegram|تيليجرام/.test(lower)) {
+        quickReply('contact');
+        return;
+    }
+    // Default - redirect to Zaid Studio
+    else {
+        response = currentLang === 'ar' ? 'هذا السؤال خارج نطاق زيد ماركت! زوروا زيد ستوديو للحصول على إجابة شاملة 🎬\n👉 https://muradtv75-oss.github.io/Zaid-Studio/'
+                 : currentLang === 'de' ? 'Diese Frage ist außerhalb von Zaid Market! Besuche Zaid Studio für eine umfassende Antwort 🎬\n👉 https://muradtv75-oss.github.io/Zaid-Studio/'
+                 : 'This question is outside Zaid Market scope! Visit Zaid Studio for a comprehensive answer 🎬\n👉 https://muradtv75-oss.github.io/Zaid-Studio/';
+    }
+
+    setTimeout(() => addBotMessage(response), 500);
+}
+
+// === SECURITY: Disable right-click context menu ===
+document.addEventListener('contextmenu', (e) => { e.preventDefault(); });
+
+// === INITIALIZATION ===
+document.addEventListener('DOMContentLoaded', () => {
+    // Create particles
+    createParticles();
+
+    // Initialize affiliate links
+    initAffiliateLinks();
+
+    // Set saved language
+    setLanguage(currentLang);
+
+    // Load YouTube TV default channel
+    loadChannel();
+
+    // Fetch exchange rates
+    fetchRates();
+
+    // Start clock & prayer times
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // Close modals on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+            const chat = document.getElementById('chatPanel');
+            if (chat.classList.contains('open')) chat.classList.remove('open');
+            const tv = document.getElementById('tvSection');
+            if (tv.classList.contains('tv-fullscreen')) tv.classList.remove('tv-fullscreen');
+        }
+    });
+});
+</script>
+</body>
+</html>
