@@ -427,10 +427,12 @@
         <div class="tv-channels" id="tvChannels">
             <button class="tv-ch-btn active" data-vid="pLbNjFIKFpo" onclick="switchChannel(this)">🕋 مكة المكرمة</button>
             <button class="tv-ch-btn" data-vid="xYjJ8Oile4g" onclick="switchChannel(this)">🕌 المدينة المنورة</button>
-            <button class="tv-ch-btn" data-vid="UCdID9fMXq0J0J-cA8KESRQ" data-type="channel" onclick="switchChannel(this)">📰 الجزيرة عربي</button>
-            <button class="tv-ch-btn" data-vid="UCNye-wNB1NxQkwc9MEjndYg" data-type="channel" onclick="switchChannel(this)">🌐 الجزيرة إنجليزي</button>
-            <button class="tv-ch-btn" data-vid="UCOyM4mJ5UrJga4s_ZcXiSzg" data-type="channel" onclick="switchChannel(this)">⚽ Eurosport</button>
-            <button class="tv-ch-btn" data-vid="UC3KeysBfImPbkVvKmKMJXJQ" data-type="channel" onclick="switchChannel(this)">🏆 BeIN Sport</button>
+            <button class="tv-ch-btn" data-vid="9Aj2FdJlBr0" onclick="switchChannel(this)">📿 القرآن الكريم</button>
+            <button class="tv-ch-btn" data-vid="L1CofMLEoZk" onclick="switchChannel(this)">📰 الجزيرة مباشر</button>
+            <button class="tv-ch-btn" data-vid="GX_S3XmqLq0" onclick="switchChannel(this)">🌍 DW عربي</button>
+            <button class="tv-ch-btn" data-vid="Fx7m3tSEuJM" onclick="switchChannel(this)">⚽ كورة</button>
+            <button class="tv-ch-btn" data-vid="hL0BmernO0s" onclick="switchChannel(this)">🇩🇪 ARD</button>
+            <button class="tv-ch-btn" data-vid="5qap5aO4i9A" onclick="switchChannel(this)">🎵 موسيقى</button>
         </div>
         <div class="tv-controls">
             <button class="tv-ctrl-btn reload" onclick="reloadChannel()" title="Reload"><span class="iconify" data-icon="mdi:refresh"></span> ↻</button>
@@ -752,14 +754,11 @@ function loadChannel() {
     loading.style.display = 'flex';
     iframe.src = '';
     setTimeout(() => {
-        const activeBtn = document.querySelector('.tv-ch-btn.active');
-        const isChannel = activeBtn && activeBtn.dataset.type === 'channel';
-        if (isChannel) {
-            iframe.src = 'https://www.youtube.com/embed/live_stream?channel=' + currentVid + '&autoplay=1&mute=' + (isMuted ? '1' : '0') + '&rel=0';
-        } else {
-            iframe.src = 'https://www.youtube.com/embed/' + currentVid + '?autoplay=1&mute=' + (isMuted ? '1' : '0') + '&rel=0';
-        }
+        // Use YouTube nocookie embed for better compatibility
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + currentVid + '?autoplay=1&mute=' + (isMuted ? '1' : '0') + '&rel=0&playsinline=1&allow=autoplay';
         iframe.onload = () => { loading.style.display = 'none'; };
+        // Fallback timeout in case onload doesn't fire
+        setTimeout(() => { loading.style.display = 'none'; }, 5000);
     }, 300);
 }
 
@@ -776,6 +775,13 @@ function toggleVolume() {
 
 function openYoutube() {
     window.open('https://www.youtube.com/watch?v=' + currentVid, '_blank', 'noopener');
+}
+
+function searchYoutube() {
+    const q = prompt('ابحث في يوتيوب:', '');
+    if (q && q.trim()) {
+        window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(q), '_blank', 'noopener');
+    }
 }
 
 function toggleFullscreen() {
